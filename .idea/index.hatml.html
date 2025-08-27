@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Perfil de usuario con biografía, detalles de contacto y formulario de actualización.">
+    <title>Perfil de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        article {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+            max-width: 500px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        .profile-img {
+            border-radius: 50%;
+            max-width: 150px;
+            display: block;
+            margin: 0 auto 1rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Perfil de Usuario</h1>
+</header>
+
+<main>
+    <section>
+        <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="profile-img">
+        <h2>Juan Pérez</h2>
+    </section>
+
+    <article>
+        <h3>Biografía</h3>
+        <p>Hola, soy Juan Pérez, desarrollador web con más de 5 años de experiencia en HTML, CSS y JavaScript. Me apasiona crear sitios web accesibles y con buena experiencia de usuario. En mi tiempo libre me gusta leer, viajar y aprender nuevas tecnologías.</p>
+    </article>
+
+    <section>
+        <h3>Detalles de Contacto</h3>
+        <table>
+            <thead>
+            <tr>
+                <th>Tipo</th>
+                <th>Detalle</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Email</td>
+                <td>juan.perez@example.com</td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>(+54) 11 1234-5678</td>
+            </tr>
+            <tr>
+                <td>Ubicación</td>
+                <td>Buenos Aires, Argentina</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3>Actualizar Perfil</h3>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value="Juan Pérez" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" value="juan.perez@example.com" required>
+
+            <label for="biografia">Biografía:</label>
+            <textarea id="biografia" name="biografia" rows="4" required>Hola, soy Juan Pérez, desarrollador web con más de 5 años de experiencia en HTML, CSS y JavaScript. Me apasiona crear sitios web accesibles y con buena experiencia de usuario. En mi tiempo libre me gusta leer, viajar y aprender nuevas tecnologías.</textarea>
+
+            <input type="submit" value="Guardar Cambios">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Perfil de Usuario. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
